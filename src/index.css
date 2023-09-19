@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.appContainer {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}

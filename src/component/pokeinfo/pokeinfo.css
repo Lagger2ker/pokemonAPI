@@ -1,0 +1,85 @@
+.pokeContainer {
+  width: 50%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 100px;
+}
+
+.pokeName {
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+  background-color: #fbd743;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  padding: 10px;
+  width: 900px;
+}
+
+.pokeStatList{
+  margin: 10px;
+  padding: 15px;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content:space-between;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+}
+
+.pokeStatListItem{
+  padding: 15px;
+  justify-content: space-between;
+  color: #000;
+}
+.pokeImg {
+  margin: 2rem;
+}
+
+.skill {
+  display: flex;
+}
+
+.pokeAbilities {
+  align-items: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #5db9ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  padding: 10px 25px;
+  width: 40%;
+}
+
+.base-stat{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    justify-content: center;
+    background-color: #5db9ff;
+    display: flex;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 900px;
+}
+
+.HP {
+  color: red;
+}
+
+.ATK {
+  color: rgb(229, 255, 0);
+}
+
+.DEF {
+  color: blue;
+}
+
+.SPD {
+  color: darkcyan;
+}

@@ -1,0 +1,21 @@
+.panel {
+  background: rgb(255, 255, 255);
+  height: calc(100vh - 50px);
+  top: 50px;
+  overflow: scroll;
+  position: sticky;
+  display: flex;
+  flex: 4;
+}
+
+.panelWrapper {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.panelLeft {
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

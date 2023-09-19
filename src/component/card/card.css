@@ -1,0 +1,31 @@
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0  25px;
+  padding-top: 15px;
+  font-size: 15px;
+  background-color: #5db9ff;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+  list-style: none;
+}
+.cardImg{
+  width: 150px;
+  height: 150px;
+}
+
+.cardNo {
+  color:navy;
+}
+
+.cardName {
+  color: darkslategray;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+}
