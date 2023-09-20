@@ -1,7 +1,7 @@
 import '../info/info.css'
 import Pokeinfo from '../pokeinfo/pokeinfo'
 
-export default function info() {
+export default function Info() {
   return (
     <div className='info' >
       <Pokeinfo/>

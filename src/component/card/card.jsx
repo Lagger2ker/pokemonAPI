@@ -1,18 +1,22 @@
 import React from "react";
 import "../card/card.css";
 
-const Card = () => {
+const Card = ({ pokeData, loading }) => {
+  console.log(pokeData);
   return (
     <>
-      <div className="card">
-        <img src="./src/assets/charmander.png" className="cardImg" alt="" />{" "}
-        <h2 className="cardNo">No:1</h2>
-        <h2 className="cardName">Charmander</h2>
-        <p className="cardType">type:</p>
-      </div>
+      {loading ? (
+        <h1>LOADING...</h1>
+      ) : (
+        pokeData.map((item) => (
+          <div className="card"key={item.id}>
+            <h2 className="cardNo">No:{item.id}</h2>
+            <img src={item.sprites.front_default} className="cardImg" alt="" />
+            <h2 className="cardName">{item.name}</h2>
+          </div>
+        ))
+      )}
     </>
   );
 };
-
 export default Card;
- 

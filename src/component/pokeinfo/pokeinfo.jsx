@@ -1,8 +1,17 @@
 import { Favorite, FlashOn, Security, Speed } from "@material-ui/icons";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../pokeinfo/pokeinfo.css";
 
-const Pokeinfo = () => {
+const Pokeinfo = ({pokeDex}) => {
+const [pokemonData, setPokemonData] = useState(null);
+
+useEffect(()=>{
+  const fetchData = async () => {
+    const data = await pokeDex();
+    setPokemonData(data);
+  };
+  fetchData();
+},[pokeDex])
   return (
     <>
       <div className="pokeContainer">
